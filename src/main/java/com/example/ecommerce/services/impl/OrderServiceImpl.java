@@ -185,8 +185,8 @@ public class OrderServiceImpl implements OrderService {
         SessionCreateParams params =
                 SessionCreateParams.builder()
                         .setMode(SessionCreateParams.Mode.PAYMENT)
-                        .setSuccessUrl("http://localhost:5173/order-placed")
-                        .setCancelUrl("http://localhost:5173/payment-failed")
+                        .setSuccessUrl("https://gizmodeckco.vercel.app/order-placed")
+                        .setCancelUrl("https://gizmodeckco.vercel.app/payment-failed")
                         .addLineItem(lineItem)
                         .putAllMetadata(metadata)
                         .build();
@@ -380,8 +380,8 @@ public class OrderServiceImpl implements OrderService {
         SessionCreateParams params =
                 SessionCreateParams.builder()
                         .setMode(SessionCreateParams.Mode.PAYMENT)
-                        .setSuccessUrl("http://localhost:5173/order-placed")
-                        .setCancelUrl("http://localhost:5173/payment-failed")
+                        .setSuccessUrl("https://gizmodeckco.vercel.app/order-placed")
+                        .setCancelUrl("https://gizmodeckco.vercel.app/payment-failed")
                         .addLineItem(lineItem)
                         .putAllMetadata(metadata)
                         .build();
