@@ -24,6 +24,7 @@ public class Product {
     private String name;
 
     @NotNull
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     @ManyToOne
