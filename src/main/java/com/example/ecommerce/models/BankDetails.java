@@ -1,12 +1,11 @@
 package com.example.ecommerce.models;
 
 import jakarta.persistence.Entity;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Data
-
+@AllArgsConstructor
+@NoArgsConstructor
 public class BankDetails {
     private Long accountNumber;
     private String accountHolderName;

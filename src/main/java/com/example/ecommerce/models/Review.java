@@ -2,7 +2,9 @@ package com.example.ecommerce.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -12,6 +14,8 @@ import java.util.List;
 @Entity
 @Table(name = "reviews")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Review {
 
     @Id

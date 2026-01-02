@@ -2,7 +2,9 @@ package com.example.ecommerce.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -11,6 +13,8 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "wishlist_items")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class WishlistItem {
 
     @Id

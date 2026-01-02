@@ -3,7 +3,9 @@ package com.example.ecommerce.models;
 import com.example.ecommerce.enums.DiscountType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -14,6 +16,8 @@ import java.time.LocalDateTime;
 @Setter
 @Entity
 @Table(name = "coupons")
+@AllArgsConstructor
+@NoArgsConstructor
 public class CouponCode {
 
     @Id
